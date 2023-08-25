@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./js/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <title>Exercicio modulo 13 bootstrap avançado</title>
+    <style>
+
+        #cards4 {
+            display: none;
+        }
+        @media screen and (max-width: 768px) {
+
+            #cards1 {
+                position: relative;
+                width: 300%;
+                left: 25px;
+            }
+
+
+            #cards2 {
+                flex-direction: column;
+                position: relative;
+                top: 105%;
+                width: 300%;
+                right: 98px;
+            }
+
+            #cards3 {
+                position: relative;
+                top: 210%;
+                width: 300%;
+                right: 225px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+            #cards1 {
+                width: 170%;
+                position: relative;
+                right: 20px;
+                margin-bottom:30px ;
+            }
+
+            #cards3 {
+                position: relative;
+                width: 170%;
+                right: 55%;
+            }
+
+            #cards4 {
+            display: flex;
+            width: 170%;
+            right: 20px;
+        }
+
+        #cards2 {
+            position: relative;
+            top: 100%;
+            left: 120px;
+            width: 170%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section id="carrocel">
+            <div class="carousel slide" style=" height: 20em;" data-bs-ride="carousel" id="slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="/fotos/car-2102367_1280 (1).jpg" class="d-block w-100" alt=" escritorio">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/fotos/home-office-569153_1280 (1).jpg" class="d-block w-100" alt=" escritorio">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="/fotos/turntable-1109588_1280 (3).jpg" class="d-block w-100" alt=" escritorio">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slide" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slide" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#slide"  data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slide"  data-bs-slide-to="2"></button>
+            </div>
+            <div class="carol">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" id="cards1">
+                            <div class="card-header">
+                                Noticias de hoje
+                            </div>
+                            <img src="./fotos/noticia sp esta friu.webp" />
+                            <div class="card-body">
+                                <h4 class="card-title">São Paulo</h4>
+                            <h5 class="card-subtitle">Fim de semana em são paulo estará muito friu</h5>
+                            <p class="card-text">
+                                O veranico em meio ao inverno termina nesta sexta-feira (25), com "alerta amarelo" do Instituto Nacional de Meteorologia (Inmet) para declínio de temperatura em quatro estados: Rio de Janeiro, São Paulo, Rio Grande do Sul e Santa Catarina.
+                            </p>
+                            <a href="https://g1.globo.com/meio-ambiente/noticia/2023/08/25/ultimo-fim-de-semana-de-agosto-tem-avanco-de-frente-fria-e-alerta-para-queda-de-temperatura.ghtml" class="btn btn-primary">visualizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card"  id="cards2">
+                            <div class="card-header">
+                                Noticias de hoje
+                            </div>
+                            <img src="fotos/leilão de estrada.webp">
+                            <div class="card-body">
+                                <h4 class="card-title">Leilão</h4>
+                            <h5 class="card-subtitle">Governo faz leilão de estradas</h5>
+                            <p class="card-text">
+                                "É o primeiro leilão de rodovias da nossa gestão, já com a nova modelagem proposta pelo Ministério dos Transportes, o primeiro do novo PAC [Programa de Aceleração do Crescimento] e o primeiro integrando rodovias estaduais e federais", afirmou o ministro dos Transportes, Renan Filho.
+                            </p>
+                            <a href="https://g1.globo.com/economia/noticia/2023/08/25/governo-faz-leilao-de-estradas-nesta-sexta-feira-na-1a-concessao-rodoviaria-de-lula-3.ghtml" class="btn btn-primary">visualizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" id="cards3">
+                            <div class="card-header">
+                                Noticias de hoje
+                            </div>
+                            <img src="/fotos/mega sena.webp" />
+                            <div class="card-body">
+                                <h4 class="card-title">Mega-sena</h4>
+                            <h5 class="card-subtitle">Mega-sena acumula e pode ganhar 30 milhoes</h5>
+                            <p class="card-text">
+                                A probabilidade de vencer em cada concurso varia de acordo com o número de dezenas jogadas e do tipo de aposta realizada. Para a aposta simples, com apenas seis dezenas, que custa R$ 5, a probabilidade de ganhar o prêmio milionário é de 1 em 50.063.860,
+                            </p>
+                            <a href="https://g1.globo.com/loterias/noticia/2023/08/24/mega-sena-concurso-2624-resultado.ghtml" class="btn btn-primary">visualizar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                    <div class="card" id="cards4">
+                        <div class="card-header">
+                            Noticias de hoje
+                        </div>
+                        <img src="./fotos/aulas.webp" />
+                        <div class="card-body">
+                            <h4 class="card-title">Aulas</h4>
+                        <h5 class="card-subtitle">Mega-sena acumula e pode ganhar 30 milhoes</h5>
+                        <p class="card-text">
+                            Por conta do calor intenso provocado pelo verão amazônico, estudantes de uma escola estadual de São Paulo de Olivença, no Interior do Amazonas, estão precisando estudar na área externa do centro educacional devido a falta de ar-condicionado.
+                        </p>
+                        <a href="Por conta do calor intenso provocado pelo verão amazônico, estudantes de uma escola estadual de São Paulo de Olivença, no Interior do Amazonas, estão precisando estudar na área externa do centro educacional devido a falta de ar-condicionado." class="btn btn-primary">visualizar</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
